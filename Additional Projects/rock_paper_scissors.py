@@ -34,4 +34,3 @@ elif (player_move == rock and computer_move == rock) or \
     print("Draw!")
 else:
     print("You lose!")
-
