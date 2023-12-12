@@ -42,6 +42,3 @@ while True:
     else:
         print("Goodbye!")
         break
-
-# To adjust outcomes when the input in "Enter your choice (1/2/3/4): "
-# and "Do you want to perform another calculation? (yes/no): " is not either
