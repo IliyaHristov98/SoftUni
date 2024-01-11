@@ -14,8 +14,5 @@ for _ in range(count):
     elif action == "4" and stack:
         print(min(stack))
 
-while stack:
-    if len(stack) > 1:
-        print(stack.pop(), end=", ")
-    else:
-        print(stack.pop(), end="")
+stack.reverse()
+print(*stack, sep=", ")

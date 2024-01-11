@@ -4,13 +4,14 @@ quantity = int(input())
 orders = deque(int(x) for x in input().split())
 print(max(orders))
 
-while orders:
-    if orders.popleft() > quantity:
-        break
+for order in orders.copy():
+    if order <= quantity:
+        orders.popleft()
+        quantity -= order
     else:
-        quantity -= orders.popleft()
+        break
 
 if orders:
-    print(f"Orders left: {' '.join(str(orders))}")
+    print(f"Orders left:", *orders)
 else:
     print("Orders complete")
