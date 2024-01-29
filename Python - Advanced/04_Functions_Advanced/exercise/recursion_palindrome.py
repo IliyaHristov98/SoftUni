@@ -6,6 +6,3 @@ def palindrome(word, index):
         return f"{word} is not a palindrome"
 
     return palindrome(word, index + 1)
-
-
-print(palindrome("a", 0))
