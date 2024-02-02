@@ -29,5 +29,5 @@ for extension, files in extensions:
     for file in sorted(files):
         result.append(f"- - - {file}")
 
-with open("files\\report.txt", "w") as report_file:
+with open("exercise\\report.txt", "w") as report_file:
     report_file.write('\n'.join(result))
