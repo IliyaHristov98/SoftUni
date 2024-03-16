@@ -71,6 +71,9 @@ class SummitQuestManagerApp:
                f"whose difficulty level is {peak.difficulty_level}."
 
     def get_statistics(self):
+        for cl in self.climbers:
+            cl.conquered_peaks = sorted(cl.conquered_peaks)
+
         sorted_climbers = sorted([climber for climber in self.climbers if climber.conquered_peaks],
                                  key=lambda climber: (-len(climber.conquered_peaks), climber.name))
 
