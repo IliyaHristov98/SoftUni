@@ -16,4 +16,3 @@ class FreeDiver(BaseDiver):
 
     def renew_oxy(self):
         self.oxygen_level = self.STARTING_OXYGEN
-
